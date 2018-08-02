@@ -6,7 +6,7 @@ const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby'];
     return name.toLowerCase();
   })
 }
- console.log(lowerCaseDrivers(drivers));
+ //console.log(lowerCaseDrivers(drivers));
 
 function nameToAttributes(drivers) {
   return drivers.map( function (driver) {
