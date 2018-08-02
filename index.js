@@ -8,10 +8,9 @@ const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby'];
 }
  console.log(lowerCaseDrivers(drivers));
 
-function nameToAttributes(list) {
-  return list.map( function (driver) {
-    const firstName = driver.split(' ')[0];
-    const lastName = driver.split(' ')[1];
-    return {firstName, lastName;
-  });
-}
+function nameToAttributes(drivers) {
+  return drivers.map( function (driver) {
+    const newArr = driver.split(" ");
+      return Object.assign({firstName: newArr[0], lastName: newArr[1]})
+    });
+  }
