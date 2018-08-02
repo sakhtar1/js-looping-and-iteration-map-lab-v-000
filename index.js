@@ -6,11 +6,16 @@ const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby'];
     return name.toLowerCase();
   })
 }
- //console.log(lowerCaseDrivers(drivers));
 
 function nameToAttributes(drivers) {
   return drivers.map( function (driver) {
     const newArr = driver.split(" ");
       return Object.assign({firstName: newArr[0], lastName: newArr[1]})
     });
+  }
+
+  function attributesToPhrase(drivers) {
+    return drivers.map( function (driver){
+      return "${driver.name} is from ${driver.hometown}";
+    })
   }
