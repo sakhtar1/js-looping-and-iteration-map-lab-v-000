@@ -1,10 +1,11 @@
 // Code your solution in this file.
 // Code your solution in this file.
-function lowerCaseDrivers(list) {
+function lowerCaseDrivers (list) {
   return list.map(function (driver) {
-    driver.toLowercase();
-  })
+    return driver.toLowerCase();
+  });
 }
+
 
 function nameToAttributes(list) {
   return list.map( function (driver) {
